@@ -13,6 +13,4 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::namespace('\BristolSU\Module\UploadFile\Http\Controllers')->group(function() {
-    Route::get('/', 'AdminPageController@index');   
-});
+Route::get('/', 'AdminPageController@index');

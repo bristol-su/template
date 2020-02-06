@@ -1,18 +1,18 @@
 <?php
 
-namespace BristolSU\Module\UploadFile\Http\Controllers;
+namespace BristolSU\Module\Template\Http\Controllers;
 
 
 use BristolSU\Support\Permissions\Contracts\PermissionStore;
-use BristolSU\Support\Permissions\Contracts\PermissionTester;
 
 class AdminPageController extends Controller
 {
     
-    public function index(PermissionStore $permission)
+    public function index()
     {
         $this->authorize('admin.view-page');
-        return view('uploadfile::admin');
+        
+        return view('template::admin');
     }
     
 }

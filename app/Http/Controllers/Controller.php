@@ -1,6 +1,6 @@
 <?php
 
-namespace BristolSU\Module\UploadFile\Http\Controllers;
+namespace BristolSU\Module\Template\Http\Controllers;
 
 use BristolSU\Support\Module\Module;
 use BristolSU\Support\ModuleInstance\ModuleInstance;
@@ -18,9 +18,8 @@ class Controller
 
     public function authorize($ability, $arguments = [])
     {
-        $moduleInstance = app()->make(ModuleInstance::class);
         return $this->baseAuthorize(
-            $moduleInstance->alias . '.' . $ability,
+            'template.' . $ability,
             $arguments
         );
     }

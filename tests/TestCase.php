@@ -1,21 +1,19 @@
 <?php
 
-namespace BristolSU\Module\Tests\UploadFile;
+namespace BristolSU\Module\Tests\Template;
 
-use BristolSU\Module\UploadFile\ModuleServiceProvider;
+use BristolSU\Module\Template\ModuleServiceProvider;
+use BristolSU\Support\Testing\AssertsEloquentModels;
+use BristolSU\Support\Testing\CreatesModuleEnvironment;
 use BristolSU\Support\Testing\TestCase as BaseTestCase;
 
 abstract class TestCase extends BaseTestCase
 {
+    use AssertsEloquentModels, CreatesModuleEnvironment;
 
     public function setUp(): void
     {
         parent::setUp();
-    }
-
-    public function alias(): string
-    {
-        return 'uploadfile';
     }
 
     protected function getPackageProviders($app)

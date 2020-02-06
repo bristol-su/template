@@ -1,6 +1,6 @@
 <?php
 
-namespace BristolSU\Module\UploadFile\Http\Controllers;
+namespace BristolSU\Module\Template\Http\Controllers;
 
 class ParticipantPageController extends Controller
 {
@@ -9,7 +9,7 @@ class ParticipantPageController extends Controller
     {
         $this->authorize('view-page');
         
-        return view('uploadfile::participant');
+        return view('template::participant');
     }
     
 }

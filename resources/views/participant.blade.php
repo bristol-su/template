@@ -1,4 +1,4 @@
-@extends('uploadfile::layouts.app')
+@extends('template::layouts.app')
 
 @section('title', 'Your Module')
 
@@ -7,12 +7,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12" style="text-align: center;">
-                    @inject('moduleInstance', 'BristolSU\Support\ModuleInstance\ModuleInstance')
-                    <h2 class="">{{settings('title')}}</h2>
-                    <p class="">{!! settings('description') !!}</p>
-                    
-                    
-                    <upload-file-root></upload-file-root>
+                    Welcome to your module! This is the participant side
+
+                    <example-component></example-component>
                 </div>
             </div>
         </div>

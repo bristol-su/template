@@ -1,4 +1,4 @@
-@extends('uploadfile::layouts.app')
+@extends('template::layouts.app')
 
 @section('title', 'Your Module')
 

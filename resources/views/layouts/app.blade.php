@@ -1,20 +1,15 @@
 @extends('bristolsu::base')
 
-
-
 @section('content')
-    <div id="uploadfile-root">
+    <div id="template-root">
         @yield('module-content')
     </div>
 @endsection
 
-
-
-
 @push('styles')
-    <link href="{{ asset('modules/uploadfile/css/module.css') }}" rel="stylesheet">
+    <link href="{{ asset('modules/template/css/module.css') }}" rel="stylesheet">
 @endpush
 
 @push('scripts')
-    <script src="{{ asset('modules/uploadfile/js/module.js') }}"></script>
+    <script src="{{ asset('modules/template/js/module.js') }}"></script>
 @endpush

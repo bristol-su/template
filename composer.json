@@ -1,40 +1,31 @@
 {
-    "name": "bristol-su/upload-file",
-    "description": "",
+    "name": "bristol-su/template",
+    "description": "A template module for the Bristol SU Portal Project",
     "license": "MIT",
     "authors": [
         {
             "name": "Toby Twigger",
-            "email": "toby.twigger@bristol.ac.uk"
+            "email": "tobytwigger1@gmail.com"
         }
     ],
     "require": {
         "php": "^7.2",
-        "bristol-su/support": "dev-master"
-    },
-    "require-dev": {
-        "orchestra/testbench": "^4.0"
+        "bristol-su/support": "^2.1"
     },
     "autoload": {
         "psr-4": {
-            "BristolSU\\Module\\UploadFile\\": "app/"
+            "BristolSU\\Module\\Template\\": "app/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BristolSU\\Module\\Tests\\UploadFile\\": "tests/"
+            "BristolSU\\Module\\Tests\\Template\\": "tests/"
         }
     },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../../support/support"
-        }
-    ],
     "extra": {
         "laravel": {
             "providers": [
-                "BristolSU\\Module\\UploadFile\\ModuleServiceProvider"
+                "BristolSU\\Module\\Template\\ModuleServiceProvider"
             ]
         }
     }
