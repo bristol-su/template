@@ -2,9 +2,6 @@
 
 namespace BristolSU\Module\Template\Http\Controllers;
 
-
-use BristolSU\Support\Permissions\Contracts\PermissionStore;
-
 class AdminPageController extends Controller
 {
     
