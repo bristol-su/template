@@ -1,9 +1,12 @@
 @extends('bristolsu::base')
 
 @section('content')
-    <div id="template-root">
-        @yield('module-content')
+    <div v-pre>
+        <div id="template-vue-root">
+            @yield('module-content')
+        </div>
     </div>
+
 @endsection
 
 @push('styles')
