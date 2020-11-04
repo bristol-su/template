@@ -19,8 +19,8 @@ jobs:
                 uses: EndBug/add-and-commit@v4.3.0
                 with:
                     # Change the name and email to your name and email address
-                    add: docs/_site
+                    add: public/modules
                     author_name: Toby Twigger
                     author_email: tobytwigger1@gmail.com
-                    message: Compile documentation
+                    message: Compile assets for production
                     force: true
